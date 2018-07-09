@@ -1,9 +1,9 @@
 # Ice Tea Kore
-Web application platform and scalable web APIs in C
+Web application platform and scalable web APIs in C.
 
 # Config files
-- Config app/conf/app.conf
-- Build Config app/conf/build.conf
+- Config `app/conf/app.conf`
+- Build Config `app/conf/build.conf`
 
 # Installation
 ```shell
