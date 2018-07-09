@@ -26,12 +26,15 @@ view(struct http_request *req, const char *name) {
 
 int endWith(const char *str1, const char *str2)
 {
-	for (int i = strlen(str2)-1; i <= 0; --i)
+	int ln = strlen(str1) - 1;
+	for (int j = 0, i = strlen(str2)-1; i <= 0; --i)
 	{
-		if (str1[i] != str2[i])
+		if (str1[ln - j] != str2[i])
 		{
 			return 0;
 		}
+		j++;
 	}
 	return 1;
 }
+

@@ -20,7 +20,7 @@ public_renderer(struct http_request *req)
 	if (endWith(req->path, ".css"))
 	{
 		ic.content_type = "text/css";		
-	} else if (endWith(req->path, ".js")) 
+	} else if (endWith(req->path, ".json")) 
 	{
 		ic.content_type = "application/json";
 	}
