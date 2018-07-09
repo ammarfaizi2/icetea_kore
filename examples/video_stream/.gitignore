@@ -1,5 +1,0 @@
-*.o
-.objs
-stream.so
-assets.h
-cert

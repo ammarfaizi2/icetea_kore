@@ -1,5 +1,0 @@
-*.o
-.objs
-headers.so
-assets.h
-cert
