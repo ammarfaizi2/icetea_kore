@@ -793,7 +793,6 @@ http_argument_get(struct http_request *req, const char *name,
 	struct http_arg		*q;
 
 	TAILQ_FOREACH(q, &(req->arguments), list) {
-		kore_log(LOG_NOTICE, "%s %s wq",$q->name, name);
 		if (strcmp(q->name, name))
 			continue;
 
