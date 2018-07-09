@@ -24,17 +24,14 @@ view(struct http_request *req, const char *name) {
 	return (KORE_RESULT_OK);
 }
 
-int endWith(const char *str1, const char *str2)
+int endWith(const char str1[], const char str2[])
 {
-	int ln = strlen(str1) - 1;
-	for (int j = 0, i = strlen(str2)-1; i <= 0; --i)
+	for (int j = strlen(str1)-1, i = strlen(str2)-1; i >= 0; --i)
 	{
-		if (str1[ln - j] != str2[i])
+		if (str1[j--] != str2[i])
 		{
 			return 0;
 		}
-		j++;
 	}
 	return 1;
 }
-
