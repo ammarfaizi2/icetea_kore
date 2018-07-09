@@ -13,7 +13,7 @@ login_page(struct http_request *req)
 }
 
 int
-login_post(struct http_request *req)
+login_action_page(struct http_request *req)
 {
 
 }

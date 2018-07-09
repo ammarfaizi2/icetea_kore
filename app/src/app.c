@@ -15,11 +15,14 @@ public_renderer(struct http_request *req)
 	strcpy(ic.file, "public");
 	strcat(ic.file, req->path);
 	
-	ic.content_type = "text/html";
+	ic.content_type = "application/octet-stream";
 
 	if (endWith(req->path, ".css"))
 	{
 		ic.content_type = "text/css";		
+	} else if (endWith(req->path, ".js")) 
+	{
+		ic.content_type = "application/json";
 	}
 
 	file_stream(req, &ic);

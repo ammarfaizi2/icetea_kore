@@ -1,8 +1,7 @@
 #include <kore/kore.h>
 #include <kore/http.h>
 #include "helpers.h"
-
-int	error_page_404(struct http_request *);
+#include "error_page.h"
 
 int
 error_page_404(struct http_request *req)

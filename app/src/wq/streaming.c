@@ -4,6 +4,8 @@
 #include <sys/mman.h>
 #include <kore/kore.h>
 #include <kore/http.h>
+
+#include "error_page.h"
 #include "wq/streaming.h"
 
 
@@ -45,7 +47,8 @@ file_open(struct http_request *req, struct stream **out, struct icetea_file_stre
 		kore_free(s);
 
 		if (errno == ENOENT)
-			http_response(req, 404, NULL, 0);
+			// http_response(req, 404, NULL, 0);
+			error_page_404(req);
 		else
 			http_response(req, 500, NULL, 0);
 
