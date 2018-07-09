@@ -1,5 +1,6 @@
 /kore
 *.o
+*.log
 *.swp
 *.swo
 *.module
