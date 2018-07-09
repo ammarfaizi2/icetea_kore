@@ -1,11 +1,13 @@
 # app configuration
 
-bind		0.0.0.0 8585
+bind		0.0.0.0 8443
 load		./app.so
 
-workers		16
-worker_max_connections	4096
+workers		1
+worker_max_connections	2048
 
+
+pidfile	kore.pid
 
 tls_dhparam	dh2048.pem
 
