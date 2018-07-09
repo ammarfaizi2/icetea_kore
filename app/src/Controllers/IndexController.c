@@ -2,7 +2,7 @@
 #include <kore/http.h>
 #include "helpers.h"
 
-int	login_page(struct http_request *);
+int	index_page(struct http_request *);
 
 int
 index_page(struct http_request *req)
