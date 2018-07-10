@@ -7,6 +7,8 @@ Web application platform and scalable web APIs in C.
 
 # Installation
 ```shell
+git clone https://github.com/ammarfaizi2/icetea_kore
+cd icetea_kore
 make
 sudo make install
 cd app
