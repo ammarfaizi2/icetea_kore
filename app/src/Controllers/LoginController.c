@@ -4,7 +4,6 @@
 #include <kore/http.h>
 #include "helpers.h"
 
-
 int	login_page(struct http_request *);
 int login_action_page(struct http_request *);
 
