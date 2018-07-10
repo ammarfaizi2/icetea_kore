@@ -6,7 +6,7 @@
 <body>
 	<center>
 		<h1>Hello Admin!</h1>
-		<a href="/logout"><h2>Logout</h2></a>
+		<a href="/logout"><button>Log Out</button></a>
 	</center>
 </body>
 </html>
