@@ -1,3 +1,3 @@
 #!/bin/sh
-kill $(cat kore.pid)
-nohup sh -c "nohup kodev >> kodev.log 2>&1 &" >> /dev/null 2>&1 &
+kill $(cat kore.pid) 2>&1
+nohup sh -c "nohup kodev run >> kodev.log 2>&1 &" >> /dev/null 2>&1 &
