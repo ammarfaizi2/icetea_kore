@@ -1,4 +1,5 @@
 
+#include <string.h>
 #include <kore/kore.h>
 #include <kore/http.h>
 #include "helpers.h"
